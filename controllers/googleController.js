@@ -22,6 +22,15 @@ module.exports = {
                         result.volumeInfo.imageLinks.thumbnail
                 )
             )
-
+            // Returns books from the API to contain a title, author, link, description, and image
+            .then(apiBooks =>
+                db.Book.find().then(dbBooks =>
+                    apiBooks.filter(apiBook =>
+                        dbBooks.every(dbBook => dbBook.googleId.toString() !== apiBook.id)
+                    )
+                )
+            )
+            .then(books => res.json(books))
+            .catch(err => res.status(422).json(err));
     }
 };
