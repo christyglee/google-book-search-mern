@@ -1,13 +1,20 @@
 import React from "react";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-import Search from "./components/Search";
+// import Search from "./components/Search";
+
+import SavedPage from "./pages/SavedPage";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
     return (
         <div>
             <Header></Header>
-            <Search></Search>
+            <SearchPage></SearchPage>
+            <SavedPage></SavedPage>
+
+
+
         </div>
     );
 }
