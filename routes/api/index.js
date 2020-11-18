@@ -11,7 +11,7 @@ router.use("/books", bookRoutes);
 
 // For anything else, render the html page
 router.use(function (req, res) {
-    res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+    res.sendFile(path.join(__dirname, "../../google-book-search-mern/build/index.html"));
 });
 
 module.exports = router;
