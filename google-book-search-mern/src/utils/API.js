@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const baseURL = 'https://www.googleapis.com/books/v1/volumes?q=';
-const API_KEY = ``;
+
+const API_KEY = `&download=epub&key=AIzaSyAXM-0mGdP-giDpA-rZwBXj5LoEMC3PPCQ`;
 
 export default {
   search: function(query) {
