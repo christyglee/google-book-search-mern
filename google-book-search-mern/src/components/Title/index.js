@@ -10,4 +10,4 @@ function Title({children}) {
     )
 }
 
-export default Title;
+export default Title; 
