@@ -10,8 +10,6 @@ router.route("/")
 
 // Routes for finding saved books and removing books from saved list
 router.route("/:id")
-  // .get(bookController.findById)
-  // .put(bookController.update)
   // delete book by id
   .delete(bookController.remove);
 

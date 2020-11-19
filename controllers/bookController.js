@@ -22,16 +22,4 @@ module.exports = {
       .then(dbBook => res.json(dbBook))
       .catch(err => res.status(422).json(err));
   },
-  // update book
-  // update: function (req, res) {
-  //   db.Book.findOneAndUpdate({ id: req.params.id }, req.body)
-  //     .then(dbBook => res.json(dbBook))
-  //     .catch(err => res.status(422).json(err));
-  // },
-  // view saved book
-  // findById: function (req, res) {
-  //   db.Book.findById(req.params.id)
-  //     .then(dbBook => res.json(dbBook))
-  //     .catch(err => res.status(422).json(err));
-  // }
 };
