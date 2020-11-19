@@ -28,11 +28,29 @@ function SearchPage() {
             <Search />
             <Container>
                 <PageTitle pageTitle={"Results"} />
-                <Card> 
-                    <Title title={"Harry Potter"}> </Title>
-                    <Author author={"J.K. Rowling"}></Author>
-                    <ImageTag src={"https://www.shethepeople.tv/wp-content/uploads/2020/05/Harry-Potter--e1588787564271.jpg"} name={"HarryPotter"}></ImageTag>
-                
+                <Card>
+                    <div className="row">
+                        <div className="col-8">
+                            <Title title={"Harry Potter"} />
+                        </div>
+                        <div className="col-4">
+                            <ViewBtn />
+                            <SaveBtn />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <Author author={"J.K. Rowling"} />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-3">
+                            <ImageTag src={"https://www.shethepeople.tv/wp-content/uploads/2020/05/Harry-Potter--e1588787564271.jpg"} name={"HarryPotter"} />
+                        </div>
+                        <div className="col-9">
+                            <Description description={"Amazing Book"} />
+                        </div>
+                    </div>
                 </Card>
             </Container>
         </div>
