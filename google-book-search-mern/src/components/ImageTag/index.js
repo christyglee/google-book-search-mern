@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-function Image({image}) {
+function Image(props) {
     return (
-        <img className="img-thumbnail img-fluid w-100" src={image} alt={image} />
+        <img className="img-thumbnail img-fluid w-100" src={props.src} alt={props.name} />
     )
 }
 

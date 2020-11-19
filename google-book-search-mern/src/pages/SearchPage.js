@@ -30,7 +30,9 @@ function SearchPage() {
                 <PageTitle pageTitle={"Results"} />
                 <Card> 
                     <Title title={"Harry Potter"}> </Title>
-
+                    <Author author={"J.K. Rowling"}></Author>
+                    <ImageTag src={"https://www.shethepeople.tv/wp-content/uploads/2020/05/Harry-Potter--e1588787564271.jpg"} name={"HarryPotter"}></ImageTag>
+                
                 </Card>
             </Container>
         </div>
