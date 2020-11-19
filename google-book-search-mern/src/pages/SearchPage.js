@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import API from '../utils/API';
 // // import { Link } from 'react-router-dom';
 // import Header from '../components/Header';
-
+import Container from "../components/container";
+import PageTitle from "../components/PageTitle";
+import Card from "../components/Card";
+import Title from "../components/Title";
+import Author from "../components/Author";
+import ImageTag from "../components/ImageTag";
+import Description from "../components/Description";
 import Search from '../components/Search';
-// import DeleteBtn from '../components/DeleteBtn/DeleteBtn';
-// import API from '../utils/API';
+import SaveBtn from "../components/SaveBtn";
+import ViewBtn from "../components/ViewBtn";
 
 
+function SearchPage() {
+    const [search, setSearch] = useState("");
+    const [results, setResults] = useState([]);
 
-const SearchPage = props => {
+    useEffect(() => {
+        if (!search) {
+            return;
+        }
+    })
     return (
         <div>
+            <Search />
+            <Container>
+                <PageTitle pageTitle={"Results"} />
+                <Card> 
+                    <Title title={"Harry Potter"}> </Title>
 
-
-            <Search>
-
-            </Search>
+                </Card>
+            </Container>
         </div>
     )
-}
+};
 
 
 

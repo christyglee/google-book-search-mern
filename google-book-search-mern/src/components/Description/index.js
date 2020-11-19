@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-function Description({children}) {
+function Description(props) {
     return (
         <p className="description">
-            {children}
+            {props.description}
         </p>
     )
 }

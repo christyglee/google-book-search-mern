@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Title({children}) {
+function Title(props) {
     return (
     
         <p>
-                {children}
+                {props.title}
         </p>
 
     )
