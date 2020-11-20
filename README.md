@@ -1,11 +1,10 @@
 # Google Books Search: MERN Review
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Generic badge](https://img.shields.io/badge/Hard_Dependancy-express-red.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/Hard_Dependancy-node_fetch-orange.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Hard_Dependancy-axios-yellow.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/Hard_Dependancy-mongoose-purple.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/Hard_Dependancy-axios-blue.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/Hard_Dependancy-react_router_dom-yellow.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/Hard_Dependancy-if_env-pink.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Hard_Dependancy-react_router_dom-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Hard_Dependancy-if_env-orange.svg)](https://shields.io/)
 
  ## Description 
 We created a new React-based app called Google Book Search. This assignment required us to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. 
