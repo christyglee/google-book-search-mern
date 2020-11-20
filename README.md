@@ -61,6 +61,13 @@ The following platforms were required to build this website:
 - [LinkedIn](https://www.linkedin.com/in/realtorkellykim/)
 <br> 
 
+## Acknowledgments
+
+* [Link to Google](https://www.google.com)
+* [Link to W3 Schools](https://www.w3schools.com)
+* [Link to StackOverflow](https://www.stackoverflow.com)
+* [Link to Node.js](https://nodejs.org/en/)
+
 
 
 
