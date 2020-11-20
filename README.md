@@ -19,6 +19,14 @@ Here is our Google Book Search in action!:
  ## Usage 
 This application is great for anyone who wants to search specific books. It's helpful because the user can save their books as well. 
 
+### Installing/Technology Used
+
+The following platforms were required to build this website:
+
+1) VS code
+2) GitBash/Terminal
+3) GitLab
+4) GitHub
 
 
 
