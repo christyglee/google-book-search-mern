@@ -11,19 +11,12 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        <div className="searchlink">
-                            <li className="nav-item active">
-                                <li> <NavLink to="/" exact> Search &nbsp; </NavLink> </li>
-                                {/* <a className="nav-link" href="/">Search <span className="sr-only">(current)</span></a> */}
-                            </li>
-                        </div>
-                        <br></br>
-                        <div className="savedlink">
-                            <li className="nav-item">
-                                {/* <a className="nav-link" href="/saved">Saved</a> */}
-                                <li> <NavLink to="/saved"> &nbsp; Saved </NavLink> </li>
-                            </li>
-                        </div>
+                        <li className="nav-item active">
+                            <NavLink to="/" exact> Search &nbsp; </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/saved"> &nbsp; Saved </NavLink>
+                        </li>
                     </ul>
                 </div>
             </nav>
