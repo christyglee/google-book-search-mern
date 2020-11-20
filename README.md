@@ -28,6 +28,12 @@ The following platforms were required to build this website:
 3) GitLab
 4) GitHub
 
+## Built With
+
+* [Node.js](https://nodejs.dev/learnthe-package-json-guide)
+* [React](https://reactjs.org/)
+
+
 
 
 
