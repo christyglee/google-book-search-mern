@@ -2,7 +2,7 @@ import React from 'react';
 
 function DeleteBtn(props) {
     return (
-        <button type="button" className="btn btn-secondary">Delete</button>
+        <button {...props} type="button" className="btn btn-secondary">Delete</button>
     );
 }
 

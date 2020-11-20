@@ -31,6 +31,13 @@ function SavedPage() {
             })
             .catch(err => console.log(err));
     };
+
+    function deleteBook(id) {
+        API.deleteBook(id)
+            .then(res => loadBooks())
+            .catch(err => console.log(err));
+    }
+
     return (
         <div>
             <Container>
@@ -38,9 +45,9 @@ function SavedPage() {
                 {!books.length ? (
                     <h3>No Books Saved</h3>
                 ) : (
-                        <>{books.map((book, i) => {
+                        <>{books.map(book => {
                             return (
-                                <Card key={i}>
+                                <Card key={book.id}>
                                     <div className="row">
                                         <div className="col-8">
                                             <Title title={book.title} />
@@ -48,7 +55,7 @@ function SavedPage() {
                                         <div className="col-4">
                                             <div className="float-right">
                                                 <ViewBtn />
-                                                <DeleteBtn />
+                                                <DeleteBtn onClick={() => deleteBook(book._id)} />
                                             </div>
                                         </div>
                                     </div>
