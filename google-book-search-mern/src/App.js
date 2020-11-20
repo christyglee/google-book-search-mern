@@ -1,20 +1,27 @@
 import React from "react";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 // import Search from "./components/Search";
-
 import SavedPage from "./pages/SavedPage";
-// import SearchPage from "./pages/SearchPage";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
     return (
         <div>
+        <Router>
             <Header></Header>
-            {/* <SearchPage></SearchPage> */}
-            <SavedPage></SavedPage>
-
-
-
+                <Switch>
+                    <Route path="/" exact>
+                        <SearchPage></SearchPage>
+                    </Route>
+                    <Route path="/saved" exact>
+                        <SavedPage></SavedPage>
+                    </Route>
+                        <Route path="*">
+                            <Redirect to="/" />
+                        </Route>
+                </Switch>
+        </Router>
         </div>
     );
 }
