@@ -13,6 +13,14 @@ Here is our Google Book Search in action!:
 
 ![alttext]()
 
+ ## Installation
+ To create your own Google Book Search app, you will need VS code and the dependencies are axios, express, if-env, mongoose and react-router-dom.
+ 
+ ## Usage 
+This application is great for anyone who wants to search specific books. It's helpful because the user can save their books as well. 
+
+
+
 
 
 
