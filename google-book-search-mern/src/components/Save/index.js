@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Save({children}) {
+function Save(props) {
     return (
         <div className='container'>
             <div className='card'>
                 <div className='card-header'><i className='fas fa-download'></i> Saved</div>
-                {children}
+                {props.save}
             </div>
         </div>
     )

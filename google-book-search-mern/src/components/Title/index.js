@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Title({children}) {
+function Title(props) {
     return (
     
-        <p>
-                {children}
-        </p>
+        <h4 className="p-2">
+                {props.title}
+        </h4>
 
     )
 }

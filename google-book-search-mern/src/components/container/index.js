@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-function container({children}) {
+function container(props) {
     return (
-        <div className='container'>
+        <div className='container border border-secondary  mt-4' {...props}>
             
         </div>
     )

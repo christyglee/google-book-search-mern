@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Author({children}) {
+function Author(props) {
     return (
-        <p>
-                {children}
+        <p className="p-2">
+                {props.author}
         </p>
     )
 }
