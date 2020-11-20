@@ -13,6 +13,7 @@ export default {
   },
   // Save a new book to database
   saveBook: function (bookData) {
+    console.log("Saving book")
     return axios.post('/api/books', bookData);
   },
   // Delete a book from database

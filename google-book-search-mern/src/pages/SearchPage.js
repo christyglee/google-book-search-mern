@@ -47,6 +47,21 @@ function SearchPage() {
             .catch(err => console.log(err));
     };
 
+    function saveBook(title, link, author, img, description) {
+        let newBook =
+        {
+            title: title,
+            link: link,
+            author: author,
+            img: img,
+            description: description
+        }
+        API.saveBook(newBook)
+            .then(res => {
+                console.log("Book saved!");
+            })
+    }
+
     return (
         <div>
             <Search value={search} handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit} />
@@ -66,7 +81,14 @@ function SearchPage() {
                                             <div className="col-4">
                                                 <div className="float-right">
                                                     <ViewBtn link={book.volumeInfo.infoLink} />
-                                                    <SaveBtn />
+                                                    <SaveBtn
+                                                        onClick={() => saveBook(book.volumeInfo.title, book.volumeInfo.infoLink, book.volumeInfo.authors.join(", "), book.volumeInfo.imageLinks.thumbnail, book.volumeInfo.description)}
+                                                    // title={book.volumeInfo.title}
+                                                    // link={book.volumeInfo.infoLink}
+                                                    // author={book.volumeInfo.authors.join(", ")}
+                                                    // img={book.volumeInfo.imageLinks.thumbnail}
+                                                    // description={book.volumeInfo.description}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
