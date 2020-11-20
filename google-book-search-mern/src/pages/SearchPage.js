@@ -23,9 +23,14 @@ function SearchPage() {
             return;
         }
     })
+
+    const handleInputChange = event => {
+        setSearch(event.target.value);
+    };
+
     return (
         <div>
-            <Search />
+            <Search value={search} handleInputChange={handleInputChange} />
             <Container>
                 <PageTitle pageTitle={"Results"} />
                 <Card>

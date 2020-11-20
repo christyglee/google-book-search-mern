@@ -1,6 +1,6 @@
 import React from "react";
 
-function Search() {
+function Search(props) {
     return (
         <div className="container">
             <div className="card">
@@ -8,7 +8,7 @@ function Search() {
                     <h1>Book Search</h1>
                     <h6>Books</h6>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Enter Book Info" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <input value={props.value} onChange={props.handleInputChange} type="text" class="form-control" placeholder="Enter Book Info" aria-label="Recipient's username" aria-describedby="button-addon2" />
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
                         </div>
