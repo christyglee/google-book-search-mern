@@ -54,7 +54,7 @@ function SavedPage() {
                                         </div>
                                         <div className="col-4">
                                             <div className="float-right">
-                                                <ViewBtn />
+                                                <ViewBtn link={book.link} />
                                                 <DeleteBtn onClick={() => deleteBook(book._id)} />
                                             </div>
                                         </div>
