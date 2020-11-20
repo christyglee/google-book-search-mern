@@ -53,7 +53,7 @@ function SearchPage() {
             title: title,
             link: link,
             author: author,
-            img: img,
+            image: img,
             description: description
         }
         API.saveBook(newBook)
