@@ -20,7 +20,7 @@ function SearchPage() {
         if (!search) {
             return;
         }
-    })
+    }, [results])
 
     const handleInputChange = event => {
         setSearch(event.target.value);
@@ -40,10 +40,11 @@ function SearchPage() {
                 if (res.data.status === "error") {
                     throw new Error(res.data.message);
                 }
-                setResults(res.data);
-                console.log(res.data);
+                setResults(res.data.items);
+                console.log(res.data.items);
+                console.log(results)
             })
-        // .catch(err => setError(err));
+            .catch(err => console.log(err));
     };
 
     return (
@@ -51,38 +52,45 @@ function SearchPage() {
             <Search value={search} handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit} />
             <Container>
                 <PageTitle pageTitle={"Results"} />
-                <Card>
-                    <div className="row">
-                        <div className="col-8">
-                            <Title title={"Harry Potter"} />
-                        </div>
-                        <div className="col-4">
-                            <div className="float-right">
-                                <ViewBtn />
-                                <SaveBtn />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                            <Author author={"J.K. Rowling"} />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-3">
-                            <ImageTag src={"https://www.shethepeople.tv/wp-content/uploads/2020/05/Harry-Potter--e1588787564271.jpg"} name={"HarryPotter"} />
-                        </div>
-                        <div className="col-9">
-                            <Description description={"Amazing Book"} />
-                        </div>
-                    </div>
-                </Card>
+                {!results.length ? (
+                    <h3>No Results to Display</h3>
+                ) : (
+                        <>{
+                            results.map(book => {
+                                return (
+                                    <Card key={book._id}>
+                                        <div className="row">
+                                            <div className="col-8">
+                                                <Title title={book.volumeInfo.title} />
+                                            </div>
+                                            <div className="col-4">
+                                                <div className="float-right">
+                                                    <ViewBtn link={book.volumeInfo.infoLink} />
+                                                    <SaveBtn />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col">
+                                                <Author author={book.volumeInfo.authors.join(", ")} />
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-3">
+                                                <ImageTag src={book.volumeInfo.imageLinks.thumbnail} name={book.volumeInfo.title} />
+                                            </div>
+                                            <div className="col-9">
+                                                <Description description={book.volumeInfo.description} />
+                                            </div>
+                                        </div>
+                                    </Card>
+                                );
+                            })
+                        }</>
+                    )}
             </Container>
         </div>
     )
 };
-
-
-
 
 export default SearchPage;
