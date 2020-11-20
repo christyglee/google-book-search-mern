@@ -2,5 +2,7 @@
     background-image: url(https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fpurewows3.imgix.net%2Fimages%2Farticles%2F2017_12%2Fbest-books-2017-header.jpg%3Fauto%3Dformat%2Ccompress%26cs%3Dstrip);
     height: 250px;
     color: white;
-    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 4px #000000;
 }
