@@ -34,8 +34,10 @@ function SearchPage() {
                             <Title title={"Harry Potter"} />
                         </div>
                         <div className="col-4">
-                            <ViewBtn />
-                            <SaveBtn />
+                            <div className="float-right">
+                                <ViewBtn />
+                                <SaveBtn />
+                            </div>
                         </div>
                     </div>
                     <div className="row">

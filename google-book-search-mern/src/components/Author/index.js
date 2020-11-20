@@ -2,7 +2,7 @@ import React from 'react';
 
 function Author(props) {
     return (
-        <p>
+        <p className="p-2">
                 {props.author}
         </p>
     )
