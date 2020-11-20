@@ -38,6 +38,28 @@ The following platforms were required to build this website:
 
 * [See Live Site]()
 
+## Authors
+
+**Kelly Stone** 
+
+- [Github](https://github.com/kellystone4)
+- [LinkedIn](https://www.linkedin.com/in/kelly-a-stone/)
+
+**Rebecca Eng** 
+
+- [Github](https://github.com/engrebecca)
+- [LinkedIn](https://www.linkedin.com/in/engrebecca/)
+
+**Christy Lee** 
+
+- [Github](https://github.com/christyglee)
+- [LinkedIn](https://www.linkedin.com/in/christy-lee/)
+
+**Kelly Kim** 
+
+- [Github](https://github.com/kellykim831)
+- [LinkedIn](https://www.linkedin.com/in/realtorkellykim/)
+<br> 
 
 
 
