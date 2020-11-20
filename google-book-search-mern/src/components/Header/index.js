@@ -20,10 +20,10 @@ function Header() {
                     </ul>
                 </div>
             </nav>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="text-center display-4">(React) Google Books Search</h1>
-                    <p class="lead text-center">Search for and Save Books of Interest</p>
+            <div className="jumbotron jumbotron-fluid">
+                <div className="container">
+                    <h1 className="text-center display-4">(React) Google Books Search</h1>
+                    <p className="lead text-center">Search for and Save Books of Interest</p>
                 </div>
             </div>
         </div>
