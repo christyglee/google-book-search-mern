@@ -10,7 +10,7 @@ function Search(props) {
                     <div className="input-group mb-3">
                         <input value={props.value} onChange={props.handleInputChange} type="text" className="form-control" placeholder="Enter Book Info" aria-label="Recipient's username" aria-describedby="button-addon2" />
                         <div className="input-group-append">
-                            <button className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                            <button onClick={props.handleFormSubmit} className="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
                         </div>
                     </div>
                 </div>

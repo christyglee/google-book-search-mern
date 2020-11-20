@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import API from '../utils/API';
-// // import { Link } from 'react-router-dom';
-// import Header from '../components/Header';
 import Container from "../components/container";
 import PageTitle from "../components/PageTitle";
 import Card from "../components/Card";
@@ -28,9 +26,29 @@ function SearchPage() {
         setSearch(event.target.value);
     };
 
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        if (!search) {
+            return;
+        }
+
+        API.search(search)
+            .then(res => {
+                if (res.data.length === 0) {
+                    throw new Error("No results found.");
+                }
+                if (res.data.status === "error") {
+                    throw new Error(res.data.message);
+                }
+                setResults(res.data);
+                console.log(res.data);
+            })
+        // .catch(err => setError(err));
+    };
+
     return (
         <div>
-            <Search value={search} handleInputChange={handleInputChange} />
+            <Search value={search} handleInputChange={handleInputChange} handleFormSubmit={handleFormSubmit} />
             <Container>
                 <PageTitle pageTitle={"Results"} />
                 <Card>
