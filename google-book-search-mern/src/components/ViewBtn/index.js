@@ -2,7 +2,7 @@ import React from 'react';
 
 function ViewBtn(props) {
     return (
-        <a href={props.link} target="_blank"><span><button type="button" className="btn btn-secondary m-3">View</button></span></a>
+        <a href={props.link} target="_blank" rel="noopener noreferrer"><span><button type="button" className="btn btn-secondary m-3">View</button></span></a>
     );
 }
 

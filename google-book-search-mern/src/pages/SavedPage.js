@@ -47,7 +47,7 @@ function SavedPage() {
                 ) : (
                         <>{books.map(book => {
                             return (
-                                <Card key={book.id}>
+                                <Card key={book._id}>
                                     <div className="row">
                                         <div className="col-8">
                                             <Title title={book.title} />
