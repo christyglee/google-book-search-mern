@@ -73,7 +73,7 @@ function SearchPage() {
                         <>{
                             results.map(book => {
                                 return (
-                                    <Card key={book._id}>
+                                    <Card key={book.id}>
                                         <div className="row">
                                             <div className="col-8">
                                                 <Title title={book.volumeInfo.title} />
